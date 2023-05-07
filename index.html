@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Lucky You Are ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- nevigation section -->
+        <div class="nevigation">
+            <h1>How Lucky You Are ?</h1>
+        </div>
+        <hr width="100%" size="5" color="white">
+
+        <!-- main section -->
+        <section class="main" id="main-section">
+            <div class="left">
+                <div class="instruction"><p>" Between 1 to 10 "</p></div>
+                <span class="input">
+                    <input id="user-input" type="number" min="1" max="10">
+                </span>
+                <button class="btn" id="click-me">Check!</button>
+                <div class="attempt" id="attemptline"><span id="attempt">10</span> Attempts Left</div>
+            </div>
+            <div class="right">
+                <div class="message" id="message-box">Start Guessing...</div>
+                <div class="score">Score: <span id="score">0</span>/10</div>
+                <div class="high-score">High Score: 10</div>
+            </div>
+        </section>
+        <hr width="100%" size="5" color="white">
+
+        <!-- attibute -->
+        <section class="attribute">
+            <button class="btn" id="refresh">Refresh</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
