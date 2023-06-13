@@ -25,6 +25,7 @@ body {
     margin: 10px 10px;
     color: aliceblue;
     height: 300px;
+    border-radius: 10px;
 }
 .left{
     display: flex;

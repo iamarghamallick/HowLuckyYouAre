@@ -19,7 +19,8 @@ function checkFunction() {
     }
     else if (user == cpu) {
         message.innerHTML = "Congratulations! YOU WIN!!";
-        bg.style.backgroundColor = "green";
+        // bg.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "green";
         updatescore.innerHTML = score;
         attemptline.style.display = "none";
         checkbutton.disabled = true;
@@ -27,13 +28,15 @@ function checkFunction() {
     }
     else if(user>cpu){
         message.innerHTML = "Oh NO! Too High!";
-        bg.style.backgroundColor = "red";
+        // bg.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "red";
         score--;
         attempt.innerHTML = score;
     }
     else if(user<cpu){
         message.innerHTML = "Oh NO! Too Low!";
-        bg.style.backgroundColor = "red";
+        // bg.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "red";
         score--;
         attempt.innerHTML = score;
     }
